@@ -1,4 +1,5 @@
-beforeEach(function() {
+describe('testing for payments.js with teardown', function() {
+    beforeEach(function() {
     billAmtInput.value = 55;
     tipAmtInput.value = 5;
     createCurPayment();
@@ -39,4 +40,5 @@ afterEach(function(){
     tr.forEach(element => {
         element.remove()
     });
+})
 })
